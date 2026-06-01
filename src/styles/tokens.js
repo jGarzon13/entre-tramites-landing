@@ -1,0 +1,16 @@
+export const colors = {
+  navy: "#1a2e6e",
+  navyDark: "#0f1c46",
+  navyLight: "#2a3f8f",
+  green: "#2db35d",
+  greenDark: "#229147",
+  blue: "#3b82f6",
+  blueSoft: "#e8eef8",
+  gray50: "#f5f6fa",
+  gray100: "#eaecf4",
+  gray200: "#d1d5e8",
+  gray500: "#6b7280",
+  gray700: "#374151",
+  white: "#ffffff",
+  accent: "#f59e0b",
+};
