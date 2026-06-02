@@ -16,7 +16,7 @@ import {
 } from "react-icons/hi2";
 
 import { colors as C } from "../../../styles/tokens";
-import heroBg from "../../../assets/images/Hero.jpg";
+import heroBg from "../../../assets/images/hero.jpg";
 
 export function Hero() {
   const trustBadges = [
