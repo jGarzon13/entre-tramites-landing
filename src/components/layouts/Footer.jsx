@@ -30,7 +30,8 @@ export function Footer() {
     <footer
       style={{
         background: C.navyDark,
-        padding: "60px 5% 32px",
+        padding: "clamp(48px, 6vw, 60px) 5% 32px",
+        overflow: "hidden",
       }}
     >
       <div
@@ -39,24 +40,13 @@ export function Footer() {
           margin: "0 auto",
         }}
       >
-        <div
-          style={{
-            display: "grid",
-            gridTemplateColumns: "2fr 1fr 1fr 1fr",
-            gap: 48,
-            marginBottom: 48,
-          }}
-        >
-          <div>
+        <div className="footer-grid">
+          <div className="footer-brand">
             <img
               src={logoET}
               alt="Entre Trámites"
+              className="footer-logo"
               style={{
-                height: 44,
-                width: "auto",
-                display: "block",
-                objectFit: "contain",
-                marginBottom: 16,
                 filter: "brightness(0) invert(1)",
               }}
             />
@@ -95,7 +85,7 @@ export function Footer() {
           </div>
 
           {footerColumns.map((column) => (
-            <div key={column.title}>
+            <div key={column.title} className="footer-column">
               <p
                 style={{
                   fontSize: 13,
@@ -135,17 +125,7 @@ export function Footer() {
           ))}
         </div>
 
-        <div
-          style={{
-            borderTop: "1px solid rgba(255,255,255,0.08)",
-            paddingTop: 24,
-            display: "flex",
-            justifyContent: "space-between",
-            alignItems: "center",
-            flexWrap: "wrap",
-            gap: 12,
-          }}
-        >
+        <div className="footer-bottom">
           <p
             style={{
               fontSize: 12,
@@ -157,12 +137,7 @@ export function Footer() {
             oficial.
           </p>
 
-          <div
-            style={{
-              display: "flex",
-              gap: 8,
-            }}
-          >
+          <div className="footer-legal-links">
             {legalLinks.map((link, index) => (
               <a
                 key={link}

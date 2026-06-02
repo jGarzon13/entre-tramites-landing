@@ -219,3 +219,157 @@ section[id] {
     width: 100%;
   }
 }
+
+@media (max-width: 480px) {
+  #inicio {
+    text-align: center;
+  }
+
+  #inicio .hero-container > div:first-child {
+    text-align: center;
+  }
+
+  #inicio .hero-container > div:first-child > div {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.footer-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  gap: 48px;
+  margin-bottom: 48px;
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  padding-top: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+@media (max-width: 900px) {
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 36px 28px;
+  }
+}
+
+@media (max-width: 640px) {
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+    margin-bottom: 36px;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+
+  .footer-bottom p {
+    line-height: 1.6;
+  }
+}
+
+.footer-logo {
+  height: 44px;
+  max-width: 220px;
+  width: auto;
+  display: block;
+  object-fit: contain;
+  margin-bottom: 16px;
+}
+
+@media (max-width: 640px) {
+  .footer-logo {
+    height: 40px;
+    max-width: 190px;
+  }
+}
+
+html,
+body,
+#root {
+  width: 100%;
+  min-height: 100%;
+  overflow-x: hidden;
+}
+
+* {
+  box-sizing: border-box;
+} 
+
+img,
+svg {
+  max-width: 100%;
+}
+
+@media (max-width: 640px) {
+  footer {
+    padding: 36px 5% 24px !important;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 0;
+    margin-bottom: 24px;
+  }
+
+  .footer-brand {
+    text-align: center;
+  }
+
+  .footer-brand .footer-logo {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 14px;
+  }
+
+  .footer-brand p {
+    max-width: 320px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .footer-column {
+    display: none;
+  }
+
+  .footer-bottom {
+    align-items: center;
+    text-align: center;
+    padding-top: 20px;
+    gap: 14px;
+  }
+
+  .footer-bottom p {
+    font-size: 11px !important;
+    line-height: 1.6;
+    max-width: 320px;
+  }
+
+  .footer-legal-links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .footer-legal-links a {
+    border-right: none !important;
+    padding: 0 6px !important;
+    font-size: 10px !important;
+  }
+}
