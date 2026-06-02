@@ -86,6 +86,7 @@ export function Hero() {
         backgroundRepeat: "no-repeat",
         display: "flex",
         alignItems: "center",
+        width: "100%",
       }}
     >
       {decorativeCircles.map((circle, index) => (
@@ -106,18 +107,7 @@ export function Hero() {
         />
       ))}
 
-      <div
-        style={{
-          maxWidth: 1200,
-          margin: "0 auto",
-          padding: "120px 5% 80px",
-          width: "100%",
-          display: "grid",
-          gridTemplateColumns: "1fr 1fr",
-          gap: 60,
-          alignItems: "center",
-        }}
-      >
+      <div className="hero-container">
         <div>
           <div
             style={{
@@ -275,15 +265,7 @@ export function Hero() {
           </div>
         </div>
 
-        <div
-          style={{
-            background: "rgba(255,255,255,0.06)",
-            backdropFilter: "blur(12px)",
-            border: "1px solid rgba(255,255,255,0.15)",
-            borderRadius: 20,
-            padding: "36px 32px",
-          }}
-        >
+        <div className="hero-service-card">
           <h3
             style={{
               color: C.white,

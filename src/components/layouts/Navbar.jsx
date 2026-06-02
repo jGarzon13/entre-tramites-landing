@@ -50,16 +50,7 @@ export function Navbar() {
         padding: "0 5%",
       }}
     >
-      <div
-        style={{
-          maxWidth: 1200,
-          margin: "0 auto",
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "space-between",
-          height: 72,
-        }}
-      >
+      <div className="navbar-inner">
         <a
           href="#inicio"
           style={{
@@ -71,6 +62,7 @@ export function Navbar() {
           <img
             src={logoET}
             alt="Entre Trámites"
+            className="navbar-logo"
             style={{
               height: 42,
               width: "auto",
@@ -83,13 +75,7 @@ export function Navbar() {
         </a>
 
 
-        <div
-          style={{
-            display: "flex",
-            gap: 32,
-            alignItems: "center",
-          }}
-        >
+        <div className="navbar-links">
           {navLinks.map((link) => (
             <a
               key={link.label}
